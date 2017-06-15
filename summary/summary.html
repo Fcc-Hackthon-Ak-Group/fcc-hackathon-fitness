@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>fitness summary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen" />
+    <link rel="stylesheet" href="summary.css">
+</head>
+<body>
+    <main id="app">
+        <!-- 心率轨迹图 -->
+        <div id="heartRate"  class="chart"></div>
+        <!-- 运动详情 -->
+        <div id="sportDetail">
+            <!-- 运动数据分析 -->
+            <div id="dataAnalysis" class="chart">
+                <span class="oneTypeData">
+                    <i class="fa fa-clock-o fa-2x" aria-hidden="true" style="color:rgb(32,178,170)"></i>
+                    <span>运动时间(min)</span>
+                    <span><strong>15 </strong></span>
+                </span>
+                <span class="oneTypeData">
+                    <i class="fa fa-fire fa-2x" aria-hidden="true" style="color:rgb(255,69,0)"></i>
+                    <span>卡路里消耗(calorie)</span>
+                    <span><strong>315 </strong></span>
+                </span>
+                <span class="oneTypeData">
+                    <i class="fa fa-line-chart fa-2x" aria-hidden="true" style="color:rgb(0,0,255)"></i>
+                    <span>平均心率(bpm)</span>
+                    <span><strong>142.45 </strong></span>
+                </span>
+                <span class="oneTypeData">
+                    <i class="fa fa-heart fa-2x" aria-hidden="true" style="color:rgb(255,0,0)"></i>
+                    <span>最大心跳(bpm)</span>
+                    <span><strong>179 </strong></span>
+                </span>
+                <!-- <span>
+                    <i class="fa fa-cog fa-2x" aria-hidden="true" style="color:rgb( 0,100,0)"></i>&nbsp;15 min
+                </span>
+                <span>
+                    <i class="fa fa-pie-chart fa-2x" aria-hidden="true" style="color:rgb(30,144,255)"></i>&nbsp;15 min
+                </span> -->
+            </div>
+            <!-- 饼图 -->
+            <div id="piechart" class="chart">
+            </div>
+        </div>
+        <!-- 建议 -->
+        <div id="recommend">
+            <p><strong>运动建议</strong></p>
+        </div>
+    </main>
+</body>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="summary.js"></script>
+<script src="data.js"></script>
